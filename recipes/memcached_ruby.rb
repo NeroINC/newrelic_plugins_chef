@@ -41,5 +41,5 @@ plugin_service 'newrelic-memcached-ruby-plugin' do
   plugin_name     'Memcached - Ruby'
   plugin_version  node[:newrelic][:memcached_ruby][:version]
   user            node[:newrelic][:memcached_ruby][:user]
-  run_command     'bundle exec'
+  run_command     '/usr/local/bin/bundle exec'
 end
